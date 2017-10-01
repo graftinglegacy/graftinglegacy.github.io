@@ -745,3 +745,32 @@ body {
   webkit-tap-highlight-color: #fed136;
 }
 .newbg a { color: #000!important; }
+ .navbar-header.page-scroll {
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.navbar-header img {
+   width:170px;
+}
+
+@media (min-width: 768px)
+{
+.navbar-nav>li>a {
+    padding-top: 55px;
+}
+}
+
+@media (min-width: 768px)
+{
+.navbar-custom.affix img{
+   width:60px;
+   background-color:transparent;
+}
+.navbar-custom.affix .navbar-nav>li>a{
+   padding-top: 30px;
+}
+.navbar-custom.affix .navbar-header.page-scroll{
+   border-radius:none;
+}
