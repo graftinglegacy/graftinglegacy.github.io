@@ -774,3 +774,5 @@ body {
 .navbar-custom.affix .navbar-header.page-scroll{
    border-radius:none;
 }
+
+p {font-size: 100px !important;}
