@@ -3,6 +3,24 @@
 
 <head>
 
+  <script>
+window['_fs_debug'] = false;
+window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'D8SVX';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+    if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};g.event=function(v){g('event',{n:i,p:v})};
+    g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+    g.consent=function(a){g("consent",!arguments.length||a)};
+    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+</script>
+
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102243318-1"></script>
     <script>
@@ -87,7 +105,7 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header style="background-color: #000;">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Atlanta’s Profitable Small Business Owners:</div>
@@ -488,15 +506,33 @@
             <div class="row">
               <div align="center">
               <h1>Read Our Free White Papers</h1><br />
+
               <a href="PDFs/Agile1.pdf" download="Agile for ANY Busieness">
-                <img src="img/logos/ebook2.png" border="5" style="margin-right: 5%;"/></a>
+                <img src="img/logos/ebook2.png" border="5" style="margin-bottom: 20px; margin-top: 15px;" />
+              </a>
+
                 <a href="PDFs/Agile2.pdf" download="Agile Principles in PE">
-                  <img src="img/logos/ebook1.png" /></a>
+                  <img src="img/logos/ebook1.png" style="margin-left: 5px;" />
+               </a>
                   <br>
                   <br>
                   <br>
 
                   <h2><b>DISCOVER YOUR NEXT ADVENTURE TODAY!</b></h2>
+
+                  <form action="https://www.getdrip.com/forms/148582926/submissions" method="post" data-drip-embedded-form="148582926">
+                    <h3 data-drip-attribute="headline">Monthly Newsletter</h3>
+                    <div data-drip-attribute="description"></div>
+                      <div>
+                          <label for="drip-email">Email Address</label><br />
+                          <input type="email" id="drip-email" name="fields[email]" value="" />
+                      </div>
+                    <div>
+                      <br /><input type="submit" value="Sign Up" data-drip-attribute="sign-up-button" />
+                    </div>
+                  </form>
+
+
               </div>
                 <hr>
                 <div class="col-md-4">
@@ -987,6 +1023,24 @@ Our approach is iterative and we stay true to Agile project after project, month
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <!-- Drip -->
+    <script type="text/javascript">
+      var _dcq = _dcq || [];
+      var _dcs = _dcs || {};
+      _dcs.account = '8051355';
+
+      (function() {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true;
+        dc.src = '//tag.getdrip.com/8051355.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+      })();
+    </script>
+    <!-- end Drip -->
+
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="0e4c3460-bfbc-4caf-b3c9-7b6ae10c16cc";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
 </body>
 
